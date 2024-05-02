@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pets Under The Sun</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="jQuery/jquery-ui.min.css">
+    <script src="jQuery/external/jquery/jquery.js"></script>
+    <script src="jQuery/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="desktop">
+      <div id="progressbar"></div>
+      <div class="shortcut" id="aboutMeWindow-shortcut">
+        <img
+          src="assets/display_properties-4.png"
+          alt="Computer with paint brush and ruler icon"
+        />
+        <p>About Me</p>
+      </div>
+      <div class="shortcut" id="contactMeWindow-shortcut">
+        <img src="assets/outlook_express-4.png" alt="Email icon" />
+        <p>Contact Me</p>
+      </div>
+      <div class="shortcut" id="serviceAreaWindow-shortcut">
+        <img src="assets/globe_map-0.png" alt="Globe icon" />
+        <p>Coverage Area</p>
+      </div>
+      <div class="shortcut" id="servicesWindow-shortcut">
+        <img src="assets/directory_closed-4.png" alt="Calendar icon" />
+        <p>Services</p>
+      </div>
+      <div class="shortcut" id="paintWindow-shortcut">
+        <img src="assets/paint_old-0.png" alt="Calendar icon" />
+        <p>Paint</p>
+      </div>
+      <div id="aboutMeWindow" class="window">
+        <div class="title-bar" id="aboutMeWindow-title-bar">
+          About Me
+          <button class="close-btn" id="aboutMeWindow-close">
+            X
+          </button>
+        </div>
+        <div class="window-content-main">
+
+        <div  class="progressbar"></div>
+        <div class="window-content">
+          <iframe src="about-us.html" title="About Me"></iframe>
+        </div>
+        </div>
+        
+      </div>
+      <div id="contactMeWindow" class="window">
+        <div class="title-bar" id="contactMeWindow-title-bar">
+          Contact Me
+          <button class="close-btn" id="contactMeWindow-close">
+            X
+          </button>
+        </div>
+        <div class="window-content-main">
+          <div  class="progressbar"></div>
+          <div class="window-content">
+            <iframe src="contact.html" title="contact me"></iframe>
+          </div>
+        </div>
+        
+      </div>
+      <div id="serviceAreaWindow" class="window">
+        <div class="title-bar" id="serviceAreaWindow-title-bar">
+          Service Area
+          <button class="close-btn" id="serviceAreaWindow-close">
+            X
+          </button>
+        </div>
+        <div class="window-content-main">
+        
+        <div  class="progressbar"></div>
+        <div class="window-content">
+          <iframe
+            src="https://www.google.com/maps/d/embed?mid=1L8Yu2E6sujm0-mJ851ozlPRXDO4&hl=en&ehbc=2E312F"
+            width="640"
+            height="480"
+          ></iframe>
+        </div>
+        </div>
+        
+      </div>
+      <div id="servicesWindow" class="window">
+        <div class="title-bar" id="servicesWindow-title-bar">
+          Services
+          <button class="close-btn" id="servicesWindow-close">
+            X
+          </button>
+        </div>
+        <div class="window-content-main">
+
+        <div  class="progressbar"></div>
+        <div class="window-content">
+          <iframe src="services.html" title="'services"></iframe>
+        </div>
+        </div>
+        
+      </div>
+      <div id="paintWindow" class="window">
+        <div class="title-bar" id="paintWindow-title-bar">
+          Paint
+          <button class="close-btn"  id="paintWindow-close">
+            X
+          </button>
+        </div>
+        <div class="window-content-main">
+
+        <div  class="progressbar"></div>
+        <div class="window-content">
+          <iframe
+            src="https://tyleret.github.io/Etch-o-Sketch/"
+            title="paint"
+          ></iframe>
+        </div>
+        </div>
+      </div>
+      <div id="clippy">
+        <div id="speech-bubble" class="speech-bubble">
+          It looks like you're exploring the wonderful world of pet care! If you
+          are reviewing from ITIS-3135, you'll see the links to the other pages
+          under in the navigation menu to meet criteria but the website is
+          designed to be viewed from the homepage. Thank you!
+        </div>
+        <img src="assets/Fatdog-0001.gif" alt="dog" id="clippyDog" />
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div id="taskbarMenu">
+      <div class="taskMenuItem">
+
+          <button class="btn" id="homePageTaskMenu">
+            <img src="assets/computer-4.png" alt="Computer Icon" />
+            <p>Home Page</p>
+
+        </a>
+      </div>
+      <div class="taskMenuItem">
+        <a href="about-us.html">
+          <button class="btn" id="aboutMeTaskMenu">
+            <img
+              src="assets/display_properties-4.png"
+              alt="Computer with paint brush and ruler icon"
+            />
+            <p>About Me</p>
+          </button>
+        </a>
+      </div>
+      <div class="taskMenuItem">
+        <a href="contact.html">
+          <button class="btn" id="contactMeTaskMenu">
+            <img src="assets/outlook_express-4.png" alt="Email icon" />
+            <p>Contact Me</p>
+          </button>
+        </a>
+      </div>
+      <div class="taskMenuItem">
+        <a href="coverage.html">
+          <button class="btn" id="aboutMeTaskMenu">
+            <img src="assets/globe_map-0.png" alt="Globe icon" />
+            <p>Coverage Area</p>
+          </button>
+        </a>
+      </div>
+      <div class="taskMenuItem">
+        <a href="services.html">
+          <button class="btn" id="aboutMeTaskMenu">
+            <img src="assets/directory_closed-4.png" alt="Calendar icon" />
+            <p>Services</p>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div id="taskbar">
+      <div id="start-button" class="btn">Navigation</div>
+    </div>
+  </footer>
+</html>
